@@ -1,0 +1,15 @@
+body {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("wallhaven-z8e8qy.jpg") center/cover no-repeat;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body > h1 {
+  font-size: 3em;
+}/*# sourceMappingURL=task2.css.map */
