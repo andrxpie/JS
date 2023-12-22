@@ -1,0 +1,88 @@
+body {
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+
+  > header {
+    margin: 10px;
+  }
+
+  > div#bio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    > div.left {
+      > img {
+        width: 113px;
+      }
+
+      > div {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+        padding-top: 10px;
+
+        > label.left {
+          font-weight: bold;
+        }
+
+        > label.right {
+          color: #888888;
+        }
+      }
+    }
+
+    > div.right {
+      > div {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: solid 1px black;
+
+        > label.left {
+          font-weight: bold;
+        }
+
+        > label.right {
+          color: #888888;
+        }
+      }
+
+      > div.followers {
+        display: flex;
+        justify-content: space-between;
+
+        > div.left {
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+
+          > label.left {
+            font-weight: bold;
+          }
+
+          > label.right {
+            color: #888888;
+          }
+        }
+
+        > div.right {
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+
+          > label.left {
+            font-weight: bold;
+          }
+
+          > label.right {
+            color: #888888;
+          }
+        }
+      }
+    }
+  }
+}

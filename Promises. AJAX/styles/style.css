@@ -1,0 +1,68 @@
+body {
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+body > header {
+  margin: 10px;
+}
+body > div#bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+body > div#bio > div.left > img {
+  width: 113px;
+}
+body > div#bio > div.left > div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+body > div#bio > div.left > div > label.left {
+  font-weight: bold;
+}
+body > div#bio > div.left > div > label.right {
+  color: #888888;
+}
+body > div#bio > div.right > div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px black;
+}
+body > div#bio > div.right > div > label.left {
+  font-weight: bold;
+}
+body > div#bio > div.right > div > label.right {
+  color: #888888;
+}
+body > div#bio > div.right > div.followers {
+  display: flex;
+  justify-content: space-between;
+}
+body > div#bio > div.right > div.followers > div.left {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+body > div#bio > div.right > div.followers > div.left > label.left {
+  font-weight: bold;
+}
+body > div#bio > div.right > div.followers > div.left > label.right {
+  color: #888888;
+}
+body > div#bio > div.right > div.followers > div.right {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+body > div#bio > div.right > div.followers > div.right > label.left {
+  font-weight: bold;
+}
+body > div#bio > div.right > div.followers > div.right > label.right {
+  color: #888888;
+}/*# sourceMappingURL=style.css.map */

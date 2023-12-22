@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub API</title>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <label>Search login</label>
+      <input type="text" id="searchtbx"/>
+      <button id="searchbtn">Search</button>
+    </header>
+    <hr />
+    <div id="bio">
+      <div class="left">
+        <img id="img" src="https://avatars.githubusercontent.com/u/119680285?v=4" />
+        <div>
+          <label class="left">Name:</label>
+          <label id="name" class="right">Tom Preston-Werner</label>
+        </div>
+        <div>
+          <label class="left">Login:</label>
+          <label id="login" class="right">mojombo</label>
+        </div>
+      </div>
+      <div class="right">
+        <div>
+          <label class="left">Url to github:</label>
+          <label class="right"><a id="url" href="https://github.com/mojombo">https://github.com/mojombo</a></label>
+        </div>
+        <div>
+          <label class="left">Blog:</label>
+          <label id="blog" class="right"><a href="https://tom-preston-werner.com">https://tom-preston-werner.com</a></label>
+        </div>
+        <div>
+          <label class="left">City:</label>
+          <label id="city" class="right">San Francisco</label>
+        </div>
+        <div>
+          <label class="left">Email:</label>
+          <label id="email" class="right">No Email</label>
+        </div>
+        <div class="followers">
+          <div class="left">
+            <label class="left">Followers</label>
+            <label id="followers" class="right">21820</label>
+          </div>
+          <div class="right">
+            <label class="left">Following</label>
+            <label id="following" class="right">11</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
