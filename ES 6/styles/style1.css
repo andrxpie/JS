@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body > section#doby {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+body > section#doby > div.product {
+  display: flex;
+  flex-direction: column;
+}
+body > section#doby > div.product > img {
+  width: 100%;
+}
+body > section#doby > div.product > div.thumbnail {
+  display: flex;
+  justify-content: space-between;
+}
+body > section#doby > div.product > div.thumbnail > div.left {
+  display: flex;
+  flex-direction: column;
+}
+body > section#doby > div.product > div.thumbnail > div.right {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=style1.css.map */

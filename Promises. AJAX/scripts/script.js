@@ -1,9 +1,12 @@
+let api = "https://api.github.com/users/andrxpie";
+
+
 function search() {
   const tbx = document.getElementById('searchtbx');
-  const api = `https://api.github.com/users/${tbx.textContent}`;
+  api = "https://api.github.com/users/" + tbx.textContent;
   fetch(api)
-    .then(res => { return res.json(); })
-    .then(data => {
+    .then(res => res.json())
+    .then(res => {
       const name = document.getElementById('name');
       const login = document.getElementById('login');
       const url = document.getElementById('url');
@@ -13,14 +16,14 @@ function search() {
       const followers = document.getElementById('followers');
       const following = document.getElementById('following');
 
-      name.innerText = data.name;
-      login.innerHTML = data.login;
-      url.innerHTML = data.url;
-      blog.innerHTML = data.blog;
-      city.innerHTML = data.city;
-      email.innerHTML = data.email;
-      followers.innerHTML = data.followers;
-      following.innerHTML = data.following;
+      name.innerText = res.name;
+      login.innerText = res.login;
+      url.innerHTML = "<a href='" + res.url + "'>" + res.url + "</a>";
+      blog.innerHTML = "<a href='" + res.blog + "'>" + res.blog + "</a>";
+      city.innerText = res.city;
+      email.innerText = res.email;
+      followers.innerText = res.followers;
+      following.innerText = res.following;
     })
     .catch(err => console.error(err.message));
 }
