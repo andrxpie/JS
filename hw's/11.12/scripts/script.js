@@ -1,102 +1,85 @@
 class Shape {
-  name;
-  sides = [];
+  #name;
 
-  constructor(name, sides) {
-    this.name = name;
-    this.sides = sides;
-  }
-
-  Info() {
-    for (let i = 0; i < this.sides.length; i++) {
-      console.log(`Side [${i}] = ${this.sides[i]}`);
-    }
-  }
-
-  Perimeter() {
-    let perimeter = 0;
-    for (let i = 0; i < this.sides.length; i++) perimeter += this.sides[i];
-    return perimeter;
-  }
-
-  Square() {
-    console.log(`Square of ${this.Name} shape`);
+  constructor(name) {
+    this.#name = name;
   }
 
   get Name() {
-    return this.name;
+    return this.#name;
   }
 }
 
 class Square extends Shape {
-  side;
+  #side;
 
   constructor(name, side) {
     super(name);
-    this.side = side;
+    this.#side = side;
   }
 
   Info() {
-    console.log(`Side = ${this.side}`);
+    console.log(`Side = ${this.#side}`);
   }
 
   Perimeter() {
-    return this.side * 4;
+    return this.#side * 4;
   }
 
   Square() {
-    return this.side * this.side;
+    return Math.pow(this.#side, 2);
   }
 }
 
 class Tringle extends Shape {
+  #sides;
+
   constructor(name, sides) {
-    super(name, sides);
+    super(name);
+    this.#sides = sides;
   }
 
   Info() {
-    for (let i = 0; i < this.sides.length; i++) {
-      console.log(`Side [${i}] = ${this.sides[i]}`);
+    for (let i = 0; i < this.#sides.length; i++) {
+      console.log(`Side [${i}] = ${this.#sides[i]}`);
     }
   }
 
   Perimeter() {
     let perimeter = 0;
-    for (let i = 0; i < this.sides.length; i++) perimeter += this.sides[i];
+    for (let i = 0; i < this.#sides.length; i++) perimeter += this.#sides[i];
     return perimeter;
   }
 
   Square() {
-    let perimeter = 0;
-    for (let i = 0; i < this.sides.length; i++) perimeter += this.sides[i];
-
-    let pp = perimeter / 2;
+    let perimeter = this.Perimeter();
+    let halfP = perimeter / 2;
     return Math.sqrt(
-      pp * (pp - this.sides[0]) * (pp - this.sides[1]) * (pp - this.sides[2])
+      halfP * (halfP - this.#sides[0]) * (halfP - this.#sides[1]) * (halfP - this.#sides[2])
     ).toFixed(2);
   }
 }
 
 class Rectangle extends Shape {
-  sides = [];
+  #sides = [];
 
   constructor(name, sides) {
     super(name);
-    this.sides = sides;
+    this.#sides = sides;
   }
 
   Info() {
-    for (let i = 0; i < this.sides.length; i++) {
-      console.log(`Side [${i}] = ${this.sides[i]}`);
+    for (let i = 0; i < this.#sides.length; i++) {
+      console.log(`Side [${i}] = ${this.#sides[i]}`);
     }
   }
 
   Perimeter() {
-    return 2 * (this.sides[0] + this.sides[1]);
+    return 2 * (this.#sides[0] + this.#sides[1]);
   }
 
   Square() {
-    return this.sides[0] * this.sides[1];
+    return this.#sides[0] * this.#sides[1];
   }
 }
 
