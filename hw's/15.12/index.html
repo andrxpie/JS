@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <form name="cars">
+      <div>
+        <div class="labels">
+          <div><label>Mark</label></div>
+          <div><label>Model</label></div>
+          <div><label>Type</label></div>
+          <div><label>Color</label></div>
+          <div><label>Claim date</label></div>
+        </div>
+        <div class="inputs">
+          <input type="text" id="mark"/>
+          <input type="text" id="model"/>
+          <select name="types" id="type">
+            <option value="Coupe">Coupe</option>
+            <option value="Sedan">Sedan</option>
+            <option value="Sport">Sport</option>
+            <option value="Hyper">Hyper</option>
+            <option value="Classic">Classic</option>
+          </select>
+          <select name="colors" id="color">
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+            <option value="White">White</option>
+            <option value="Black">Black</option>
+          </select>
+          <input type="date" id="date"/>
+        </div>
+      </div>
+      <button type="button">Submit</button>
+    </form>
+    <div class="search">
+      <label>Search</label>
+      <input type="text" />
+    </div>
+    <table class="table">
+      <thead id="head">
+        <tr>
+          <td>Mark</td>
+          <td>Model</td>
+          <td>Type</td>
+          <td>Color</td>
+          <td>Claim Date</td>
+        </tr>
+      </thead>
+      <tbody id="body">
+      </tbody>
+    </table>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

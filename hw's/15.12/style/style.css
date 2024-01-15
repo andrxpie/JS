@@ -1,0 +1,44 @@
+body {
+  background-color: #1c1e26;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+body > form {
+  display: flex;
+  flex-direction: column;
+}
+body > form > div {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+body > form > div > div.labels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+body > form > div > div.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body > form > button {
+  margin-top: 20px;
+}
+body > div.search {
+  margin-top: 30px;
+  display: grid;
+}
+body > table.table {
+  margin-top: 30px;
+  min-width: 100%;
+  text-align: center;
+}
+body > table.table > thead > tr > td {
+  padding: 10px;
+}
+body > table.table > tbody {
+  font-weight: normal;
+}/*# sourceMappingURL=style.css.map */
