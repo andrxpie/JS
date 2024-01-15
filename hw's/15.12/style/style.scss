@@ -37,6 +37,11 @@ body {
     display: grid;
   }
 
+  > input {
+    margin-top: 5px;
+    min-width: 100%;
+  }
+
   > table.table {
     margin-top: 30px;
     min-width: 100%;
