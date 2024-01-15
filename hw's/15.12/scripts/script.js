@@ -87,3 +87,11 @@ function search() {
     }
   }
 }
+
+let clearBtn = document.getElementById('clear');
+clearBtn.onclick = clear;
+
+function clear() {
+  table.innerHTML = "";
+  cars = [];
+}
