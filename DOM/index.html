@@ -8,37 +8,67 @@
   </head>
   <body>
     <form name="cars">
-      <div class="labels">
-        <div><label>Mark</label></div>
-        <div><label>Model</label></div>
-        <div><label>Type</label></div>
-        <div><label>Color</label></div>
-        <div><label>Claim date</label></div>
+      <div>
+        <div class="labels">
+          <div><label>Mark</label></div>
+          <div><label>Model</label></div>
+          <div><label>Type</label></div>
+          <div><label>Color</label></div>
+          <div><label>Claim date</label></div>
+        </div>
+        <div class="inputs">
+          <input type="text" id="mark"/>
+          <input type="text" id="model"/>
+          <select name="types" id="type">
+            <option value="coupe">Coupe</option>
+            <option value="sedan">Sedan</option>
+            <option value="sport">Sport</option>
+            <option value="hyper">Hyper</option>
+            <option value="classic">Classic</option>
+          </select>
+          <select name="colors" id="color">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="white">White</option>
+            <option value="black">Black</option>
+          </select>
+          <input type="date" id="date"/>
+        </div>
       </div>
-      <div class="inputs">
-        <input type="text" />
-        <input type="text" />
-        <select name="types">
-          <option value="coupe">Coupe</option>
-          <option value="sedan">Sedan</option>
-          <option value="sport">Sport</option>
-          <option value="hyper">Hyper</option>
-          <option value="classic">Classic</option>
-        </select>
-        <select name="colors">
-          <option value="red">Red</option>
-          <option value="green">Green</option>
-          <option value="blue">Blue</option>
-          <option value="white">White</option>
-          <option value="black">Black</option>
-        </select>
-        <input type="date" />
-      </div>
+      <button type="button">Submit</button>
     </form>
     <div class="search">
       <label>Search</label>
       <input type="text" />
     </div>
+    <table class="table">
+      <thead id="head">
+        <tr>
+          <td>Mark</td>
+          <td>Model</td>
+          <td>Type</td>
+          <td>Color</td>
+          <td>Claim Date</td>
+        </tr>
+      </thead>
+      <tbody id="body">
+        <tr>
+          <td>Audi</td>
+          <td>RS 7</td>
+          <td>Sport</td>
+          <td>White</td>
+          <td>13.01.2024</td>
+        </tr>
+        <tr>
+          <td>Audi</td>
+          <td>RS 7</td>
+          <td>Sport</td>
+          <td>White</td>
+          <td>13.01.2024</td>
+        </tr>
+      </tbody>
+    </table>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

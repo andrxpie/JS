@@ -5,32 +5,53 @@ body {
   color: white;
 
   > form {
-    display: grid;
-    grid-template-columns: 2fr 8fr;
+    display: flex;
+    flex-direction: column;
 
-    > div.labels {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: flex-end;
-      margin-right: 20px;
+    > div {
+      display: grid;
+      grid-template-columns: 2fr 8fr;
 
-      > div {
-        > label {
-          
-        }
+      > div.labels {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-end;
+        margin-right: 20px;
+      }
+
+      > div.inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
       }
     }
 
-    > div.inputs {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    > button {
+      margin-top: 20px;
     }
   }
 
   > div.search {
     margin-top: 30px;
     display: grid;
+  }
+
+  > table.table {
+    margin-top: 30px;
+    min-width: 100%;
+    text-align: center;
+
+    > thead {
+      > tr {
+        > td {
+          padding: 10px;
+        }
+      }
+    }
+
+    > tbody {
+      font-weight: normal;
+    }
   }
 }
