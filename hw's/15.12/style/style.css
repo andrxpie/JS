@@ -31,6 +31,10 @@ body > div.search {
   margin-top: 30px;
   display: grid;
 }
+body > input {
+  margin-top: 5px;
+  min-width: 100%;
+}
 body > table.table {
   margin-top: 30px;
   min-width: 100%;
